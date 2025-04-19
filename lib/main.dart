@@ -41,72 +41,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme:
-//
-//
-// ThemeData(
-//   colorScheme: ColorScheme.fromSeed(
-//     seedColor: Colors.deepPurple, // اللون الأساسي للتصميم
-//     primary: Colors.deepPurple.shade600, // اللون الأساسي للزرار والأشياء الرئيسية
-//     onPrimary: Colors.white, // اللون النصي فوق اللون الأساسي
-//     secondary: Colors.teal, // اللون الثانوي للعناصر الأخرى
-//     onSecondary: Colors.white, // اللون النصي فوق اللون الثانوي
-//     background: Colors.white, // خلفية التطبيق
-//     onBackground: Colors.black, // اللون النصي فوق الخلفية
-//     surface: Colors.deepPurple.shade50, // لون سطح العناصر مثل بطاقات الكارد
-//     onSurface: Colors.black, // اللون النصي فوق الأسطح
-//     error: Colors.redAccent, // لون الخطأ
-//     onError: Colors.white, // اللون النصي فوق لون الخطأ
-//   ),
-//   useMaterial3: true,
-//   fontFamily: "PlayfairDisplay", // تحديد خط النص
-//   textTheme: TextTheme(
-//     displayLarge: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.deepPurple.shade900),
-//     displayMedium: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.deepPurple.shade700),
-//     displaySmall: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.deepPurple.shade600),
-//     bodyLarge: TextStyle(fontSize: 16.0, color: Colors.black87),
-//     bodyMedium: TextStyle(fontSize: 14.0, color: Colors.black54),
-//     labelLarge: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white),
-//     bodySmall: TextStyle(fontSize: 12.0, color: Colors.grey),
-//   ),
-//   buttonTheme: ButtonThemeData(
-//     buttonColor: Colors.deepPurple.shade600, // لون أزرار التطبيق
-//     textTheme: ButtonTextTheme.primary, // نص الأزرار بلون الأساس
-//   ),
-//   appBarTheme: AppBarTheme(
-//     backgroundColor: Colors.deepPurple.shade700, // لون شريط العنوان
-//     foregroundColor: Colors.white, // لون النص على شريط العنوان
-//     elevation: 4, // ارتفاع شريط العنوان
-//   ),
-//   cardTheme: CardTheme(
-//     color: Colors.white, // لون بطاقات الكارد
-//     shadowColor: Colors.black.withOpacity(0.2), // لون ظل الكارد
-//     elevation: 4, // ارتفاع ظل الكارد
-//     shape: RoundedRectangleBorder(
-//       borderRadius: BorderRadius.circular(12), // تدوير زوايا الكارد
-//     ),
-//   ),
-//   dividerTheme: DividerThemeData(
-//     color: Colors.deepPurple.shade100, // لون الخط الفاصل
-//     thickness: 1.5, // سمك الخط الفاصل
-//   ),
-//   inputDecorationTheme: InputDecorationTheme(
-//     border: OutlineInputBorder(
-//       borderRadius: BorderRadius.circular(12), // تدوير زوايا الحقول
-//       borderSide: BorderSide(color: Colors.teal), // لون حدود الحقول
-//     ),
-//     focusedBorder: OutlineInputBorder(
-//       borderRadius: BorderRadius.circular(12), // تدوير زوايا الحقول عند التركيز
-//       borderSide: BorderSide(color: Colors.teal), // لون حدود الحقول عند التركيز
-//     ),
-//     labelStyle: TextStyle(color: Colors.teal), // لون النص في حقول الإدخال
-//   ),
-// ),
+
 
           ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
               fontFamily: "PlayfairDisplay"),
-      home: const MyHomePage(title: 'تطبيق البراء  '),
+      home: const MyHomePage(title: 'Aid-Organizer-Application  '),
     );
   }
 }
@@ -144,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         right: 10,
                         bottom: 10,
                         child: Text(
-                          "تطبيق البراء ",
+                          "Aid-Organizer-Application ",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         )),
                   ],
@@ -155,8 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Card(
                   child: ListTile(
                     onTap: () {
-                      // Navigator.pop(context); // إغلاق الـ Drawer عند النقر
-                      // يمكنك تنفيذ إجراء آخر هنا
+                   
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -175,8 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Card(
                   child: ListTile(
                     onTap: () {
-                      Navigator.pop(context); // إغلاق الـ Drawer عند النقر
-                      // يمكنك تنفيذ إجراء آخر هنا
+                      Navigator.pop(context);
+                    
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -195,8 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Card(
                   child: ListTile(
                     onTap: () {
-                      Navigator.pop(context); // إغلاق الـ Drawer عند النقر
-                      // يمكنك تنفيذ إجراء آخر هنا
+                      Navigator.pop(context);
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -285,12 +224,12 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.black.withOpacity(0.2),
         blurRadius: 10,
         spreadRadius: 2,
-        offset: const Offset(0, -3), // ظل للأعلى ليعطي تأثير عائم
+        offset: const Offset(0, -3), 
       ),
     ],
   ),
   child: BottomNavigationBar(
-    elevation: 0, // إزالة التأثير الافتراضي لتنسيق أفضل
+    elevation: 0, 
     items: const [
       BottomNavigationBarItem(
         icon: Icon(Icons.category_rounded, size: 30), // أيقونة التصنيفات
@@ -306,9 +245,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     ],
     currentIndex: selectedIndex,
-    backgroundColor: Colors.transparent, // ينسجم مع لون الحاوية الخارجية
+    backgroundColor: Colors.transparent, 
     selectedItemColor: Colors.white,
-    unselectedItemColor: Colors.white70, // لون خافت للعناصر غير المحددة
+    unselectedItemColor: Colors.white70,
     selectedFontSize: 14,
     unselectedFontSize: 12,
     type: BottomNavigationBarType.fixed,
@@ -325,7 +264,7 @@ class _MyHomePageState extends State<MyHomePage> {
           iconTheme: const IconThemeData(color: Colors.white),
           backgroundColor: Colors.teal,
           title: Align(
-            alignment: Alignment.centerRight, // محاذاة العنوان لليمين
+            alignment: Alignment.centerRight, 
             child: Text(widget.title,
                 style: const TextStyle(color: Colors.white, fontSize: 25),
                 textDirection: TextDirection.rtl),
